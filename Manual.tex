@@ -18,7 +18,7 @@ In an effort to address any balancing issues in the case, BWPB factors the case 
 
 The base QW for the Richard Calkins Invitational will be $10$ points. This term is then modified for each side of the case by the formulas below. The partial ballots for all rounds are recalculated after each round, so the case balance from rounds two through four does affect the sides' QW for round one, et cetera.
 \begin{center}
-$PQW=2QW\left(\frac{\mbox{Prosecution Ballots Won}+\frac{\mbox{TiedBallots}}{2}}{\mbox{Total Ballots}}\right)$
+$PQW=2QW\left(\frac{\mbox{Prosecution Ballots Won}+\frac{\mbox{Tied Ballots}}{2}}{\mbox{Total Ballots}}\right)$
 
 $DQW=2QW\left(\frac{\mbox{Defense Ballots Won}+\frac{\mbox{Tied Ballots}}{2}}{\mbox{Total Ballots}}\right)$
 \end{center}
@@ -99,7 +99,7 @@ There are an infinite number of functions that could map a PD between $-QW$ and 
 \label{ballotCurves}
 \includegraphics[width=0.8\linewidth]{BallotCurve}
 \end{figure}
-, Macalester uses a a straight line (Figure \ref{ballotCurves}-Yellow), while Yale uses a piecewise logarithmic function consisting of two regions (Figure \ref{ballotCurves}-Green).  The curve used at the Richard Calkins Invitational will be a piecewise logarithmic function consisting of four regions (Figure \ref{ballotCurves}-Orange).  There are several motivations for selecting such a shape.  The shape of the curve is selected to recognize that PD's close to 0 ought to be weighted similarly to a tie (in comparison to Macalester's and Yale's curves, when $|PD|<\frac{QW}{2}$ the partial ballots awarded are closer to $0.5$).  Additionally, by the time the PD becomes close to $QW$, there is a similar decrease in the slope of the curve, consistent with recognizing that at that point, the winning team deserves the vast majority of the partial ballots being awarded.  This suggests a function with a large slope near $PD=\frac{\pm QW}{2}$ and a small slope near $PD=0$ and$PD=\pm QW$ achieved by:\\
+, Macalester uses a a straight line (Figure \ref{ballotCurves}-Yellow), while Yale uses a piecewise logarithmic function consisting of two regions (Figure \ref{ballotCurves}-Green).  The curve used at the Richard Calkins Invitational will be a piecewise logarithmic function consisting of four regions (Figure \ref{ballotCurves}-Orange).  There are several motivations for selecting such a shape.  The shape of the curve is selected to recognize that PD's close to 0 ought to be weighted similarly to a tie (in comparison to Macalester's and Yale's curves, when $|PD|<\frac{QW}{2}$ the partial ballots awarded are closer to $0.5$).  Additionally, by the time the PD becomes close to $QW$, there is a similar decrease in the slope of the curve, consistent with recognizing that at that point, the winning team deserves the vast majority of the partial ballots being awarded.  This suggests a function with a large slope near $PD=\frac{\pm QW}{2}$ and a small slope near $PD=0$ and $PD=\pm QW$ achieved by:\\
 \begin{displaymath}
    PB(PD) = \left\{
      \begin{array}{lr}
